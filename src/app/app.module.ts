@@ -10,6 +10,8 @@ import { MyModule } from './my.module';
 import { CreateComponent } from './create/create.component';
 import { MoviesComponent } from './movies/movies.component';
 
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { MoviesComponent } from './movies/movies.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MyModule
+    MyModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
